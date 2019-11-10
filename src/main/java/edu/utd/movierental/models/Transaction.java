@@ -11,7 +11,7 @@ public class Transaction {
         for (Rental rental :this.customer.getRentals()) {
             this.customer.setFrequentRenterPoints(rental.computeRentalPoints(this.customer.getFrequentRenterPoints()));
         }
-
+        return 0;
     }
 
 }
